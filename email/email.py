@@ -4,7 +4,7 @@
 from email.mime.text import MIMEText
 from email.header import Header
 import smtplib
-msg = MIMEText('浮生若梦，为欢几何', 'plain', 'utf-8')
+msg = MIMEText('浮生若梦，为欢几何！', 'plain', 'utf-8')
 
 from_addr = input('From: ')
 password = input('Password: ')
