@@ -19,7 +19,7 @@ smtp_server = input('SMTP server: ')
 msg = MIMEText('<html><body><h1>Hello</h1>' + 
 '<p>sned by <a href="http://www.python.org">Python</a>...</p>' + 
 '</body></html>', 'html', 'utf-8')
-msg['Subject'] = Header('来自SMTP的问候...', 'utf-8').encode()
+msg['Subject'] = Header('来自SMTP的问候....', 'utf-8').encode()
 msg['From'] = _format_add('Python爱好者 <%s>' % from_addr)
 msg['To'] = _format_add('yushuo <%s>' % to_addr)
 
