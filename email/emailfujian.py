@@ -19,7 +19,7 @@ to_addr = input('To: ')
 smtp_server = input('SMTP server: ')
 
 msg = MIMEMultipart()
-msg['Subject'] = Header('来自SMTP的问候...', 'utf-8').encode()
+msg['Subject'] = Header('来自SMTP的问候......', 'utf-8').encode()
 msg['From'] = _format_add('Python爱好者 <%s>' % from_addr)
 msg['To'] = _format_add('yushuo <%s>' % to_addr)
 
